@@ -13,8 +13,8 @@ export class TasksComponent {
   @Input({ required: true }) name!: string;
   tasks = [
     {
-      id: 't2',
-      userId: 'u2',
+      id: 't1',
+      userId: 'u1',
       title: 'Master Angular',
       summary: 'Learn all the basic and advanced features of Angular & how to apply them.',
       dueDate: '2025-12-31'
@@ -22,6 +22,13 @@ export class TasksComponent {
     {
       id: 't2',
       userId: 'u2',
+      title: 'Build first prototype',
+      summary: 'Build first prototype of the online shop website.',
+      dueDate: '2025-05-31'
+    },
+    {
+      id: 't3',
+      userId: 'u3',
       title: 'Build first prototype',
       summary: 'Build first prototype of the online shop website.',
       dueDate: '2025-05-31'
@@ -37,5 +44,9 @@ export class TasksComponent {
 
   get selectedUserTasks() {
     return this.tasks.filter((task) => task.userId === this.userId);
+  }
+
+  onCompleteTask(id: string) {
+    this.tasks = this.tasks.filter((task) => task.id !== id);
   }
 }
