@@ -1,5 +1,5 @@
 import { Component, EventEmitter, /*computed*/ Input, Output, /*input*/ } from '@angular/core';
-import { User } from './user.model';
+import { type User } from './user.model';
 
 @Component({
   selector: 'app-user',
@@ -9,14 +9,10 @@ import { User } from './user.model';
   styleUrl: './user.component.css'
 })
 export class UserComponent {
-  // avatar = input.required<string>();
-  // name = input.required<string>();
-  @Input({required: true}) user!: User;
+  @Input({ required: true }) user!: User;
+  @Input({ required: true }) selected!: boolean;
   @Output() select = new EventEmitter();
 
-  // imagePath = computed(() => {
-  //   return 'assets/users/' + this.avatar();
-  // });
   get imagePath() {
     return 'assets/users/' + this.user.avatar;
   }
