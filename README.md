@@ -1,3 +1,7 @@
+<div align="center">
+  <img alt="Header" src="/src/assets/task-management-logo.png"/>
+</div>
+
 # 📝 EasyTask
 EasyTask é uma aplicação web simples e eficiente para gerenciar tarefas, onde você pode adicionar tasks para cada usuário e marcar se estão concluídas.
 
