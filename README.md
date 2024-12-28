@@ -18,32 +18,31 @@ Interface intuitiva e fácil de usar.
 
 Navegue para o diretório do projeto:
 
-'''bash
+```bash
 git clone https://github.com/seu-usuario/easytask.git
-'''
+```
 
 Instale as dependências:
 
-'''bash
+```bash
 cd easytask
-'''
+```
 
 Inicie o servidor de desenvolvimento:
 
-'''bash
+```bash
 npm install
-'''
+```
 
 Acesse a aplicação em http://localhost:4200.
 
-'''bash
+```bash
 ng serve
-'''
+```
 
+## 📖 Estrutura do Projeto
 
-📖 Estrutura do Projeto
-plaintext
-Copy code
+```plaintext
 src/
 ├── app/                 # Diretório principal da aplicação
 │   ├── header/          # Componente de cabeçalho
@@ -55,7 +54,7 @@ src/
 │   └── user/            # Funcionalidades relacionadas aos usuários
 └── assets/              # Arquivos estáticos da aplicação
     └── users/           # Dados ou recursos relacionados aos usuários
-
+````
 
 ## 🏫 Sobre o Curso
 O projeto foi inspirado nas seções 1 e 2 do curso The Complete Guide to Angular 2, onde os fundamentos do Angular e as boas práticas de desenvolvimento foram abordados.
