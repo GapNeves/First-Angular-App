@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="Header" src="/src/assets/task-management-logo.png"/>
+  <img height="150em" length="50em" alt="Header" src="/src/assets/task-management-logo.png"/>
 </div>
 
 # 📝 EasyTask
